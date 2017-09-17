@@ -27,9 +27,7 @@ function filterData() {
 }
 
 function searchValue(value, array) {
-    console.log(array);
     return array.filter((item) => {
-        console.log(item);
         const regex = new RegExp(value, "gi");
         return item[0].match(regex) || item[1].match(regex);
     });
