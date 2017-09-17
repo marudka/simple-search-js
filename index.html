@@ -3,25 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Search input</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<form class="search-form">
-    <input type="text" class="search" placeholder="Type city...">
-    <ul class="suggestions">
-        <li>Filter for a city</li>
-    </ul>
-</form>
-<script>
-    const endpoint = "http://localhost:3000/cities";
-    fetch(endpoint)
-        .then(result => result.json())
-        .then((result) => {
-            console.log(result);
-        });
-
-
-</script>
+    <form class="search-form">
+        <input type="text" class="search" placeholder="Type city...">
+        <ul class="suggestions">
+            <li>Population Polish cities</li>
+        </ul>
+    </form>
+    <script src="dist/scripts.js"></script>
 </body>
 </html>
